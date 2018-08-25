@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{928F0C0C-9BC4-4383-A18A-D33696EDD10A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ClsDataFormat</RootNamespace>
+    <AssemblyName>ClsDataFormat</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>ClsDataFormat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>ClsDataFormat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Col\Col_AConfig.vb" />
+    <Compile Include="Col\Col_AConfigDtl.vb" />
+    <Compile Include="Col\Col_MenuCountDiff.vb" />
+    <Compile Include="Col\Col_Dl_KHKS.vb" />
+    <Compile Include="Col\Col_FdCnt.vb" />
+    <Compile Include="Col\Col_LKon.vb" />
+    <Compile Include="Col\Col_LPer.vb" />
+    <Compile Include="Col\Col_MAge.vb" />
+    <Compile Include="Col\Col_MAgeDNR.vb" />
+    <Compile Include="Col\Col_MAgeInf.vb" />
+    <Compile Include="Col\Col_MCkSk.vb" />
+    <Compile Include="Col\Col_MColor.vb" />
+    <Compile Include="Col\Col_MColorSet.vb" />
+    <Compile Include="Col\Col_MContCls.vb" />
+    <Compile Include="Col\Col_MContClsLk.vb" />
+    <Compile Include="Col\Col_MFdSKey.vb" />
+    <Compile Include="Col\Col_MFdTray.vb" />
+    <Compile Include="Col\Col_MMealCmtP.vb" />
+    <Compile Include="Col\Col_MMealLmtP.vb" />
+    <Compile Include="Col\Col_MNutSKey.vb" />
+    <Compile Include="Col\Col_MPc.vb" />
+    <Compile Include="Col\Col_MPrinter.vb" />
+    <Compile Include="Col\Col_MReserve.vb" />
+    <Compile Include="Col\Col_MSiTen.vb" />
+    <Compile Include="Col\Col_MUserGp.vb" />
+    <Compile Include="Col\Col_OChg.vb" />
+    <Compile Include="Col\Col_OChgAge.vb" />
+    <Compile Include="Col\Col_OMain.vb" />
+    <Compile Include="Col\Col_OMCdChg.vb" />
+    <Compile Include="Col\Col_OOdDivChg.vb" />
+    <Compile Include="Col\Col_OrderSTD.vb" />
+    <Compile Include="Col\Col_ORecv.vb" />
+    <Compile Include="Col\Col_OSendKon.vb" />
+    <Compile Include="Col\Col_OSeq.vb" />
+    <Compile Include="Col\Col_OTelDef.vb" />
+    <Compile Include="Col\Col_REiyoS.vb" />
+    <Compile Include="Col\Col_SDatabases.vb" />
+    <Compile Include="Col\Col_SiemensOrderData.vb" />
+    <Compile Include="Col\Col_SMed.vb" />
+    <Compile Include="Col\Col_SMenuCountDiff.vb" />
+    <Compile Include="Col\Col_TAgeTgt.vb" />
+    <Compile Include="Col\Col_MCmt.vb" />
+    <Compile Include="Col\Col_GTblCst.vb" />
+    <Compile Include="Col\Col_MCmtChg.vb" />
+    <Compile Include="Col\Col_MCokFd.vb" />
+    <Compile Include="Col\Col_MealTpList.vb" />
+    <Compile Include="Col\Col_MFdCmt.vb" />
+    <Compile Include="Col\Col_MFdComp.vb" />
+    <Compile Include="Col\Col_MFdCost.vb" />
+    <Compile Include="Col\Col_MFdNoUse.vb" />
+    <Compile Include="Col\Col_MFdNutri.vb" />
+    <Compile Include="Col\Col_MGpFd.vb" />
+    <Compile Include="Col\Col_MGpFdCls.vb" />
+    <Compile Include="Col\Col_MGpFdClsMx.vb" />
+    <Compile Include="Col\Col_MGpFdLk.vb" />
+    <Compile Include="Col\Col_MGpFdMx.vb" />
+    <Compile Include="Col\Col_MHeiSt.vb" />
+    <Compile Include="Col\Col_MJiGyo.vb" />
+    <Compile Include="Col\Col_MKMealLk.vb" />
+    <Compile Include="Col\Col_MKMealLmt.vb" />
+    <Compile Include="Col\Col_MKMealTp.vb" />
+    <Compile Include="Col\Col_MMealGpK.vb" />
+    <Compile Include="Col\Col_MMealGpP.vb" />
+    <Compile Include="Col\Col_MMealLmtK.vb" />
+    <Compile Include="Col\Col_MMealTpK.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Col\Col_MMealTpP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Col\Col_MNutri.vb" />
+    <Compile Include="Col\Col_MSisetsu.vb" />
+    <Compile Include="Col\Col_RHVirusC.vb" />
+    <Compile Include="Col\Col_RHVirusF.vb" />
+    <Compile Include="Col\Col_SCtl.vb" />
+    <Compile Include="Col\Col_SearchClsCd.vb" />
+    <Compile Include="Col\Col_SGrd.vb" />
+    <Compile Include="Col\Col_SJiGyoSnd.vb" />
+    <Compile Include="Col\Col_SROutPut.vb" />
+    <Compile Include="Col\Col_SRptInf.vb" />
+    <Compile Include="Col\Col_TBuyInf.vb" />
+    <Compile Include="Col\Col_TCKon.vb" />
+    <Compile Include="Col\Col_TCKonCk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Col\Col_TCKonCnt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Col\Col_TCKonFd.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Col\Col_TContra.vb" />
+    <Compile Include="Col\Col_TContraFd.vb" />
+    <Compile Include="Col\Col_TCycle.vb" />
+    <Compile Include="Col\Col_TCycleFd.vb" />
+    <Compile Include="Col\Col_TFdCvt.vb" />
+    <Compile Include="Col\Col_TFdGpAvgJ.vb" />
+    <Compile Include="Col\Col_TFdGpAvgK.vb" />
+    <Compile Include="Col\Col_THacEdit.vb" />
+    <Compile Include="Col\Col_THacEditMeal.vb" />
+    <Compile Include="Col\Col_THacFd.vb" />
+    <Compile Include="Col\Col_THacHst.vb" />
+    <Compile Include="Col\Col_THacHstNo.vb" />
+    <Compile Include="Col\Col_THacInf.vb" />
+    <Compile Include="Col\Col_THacJZ.vb" />
+    <Compile Include="Col\Col_THacMealFd.vb" />
+    <Compile Include="Col\Col_THacValChg.vb" />
+    <Compile Include="Col\Col_TInvty.vb" />
+    <Compile Include="Col\Col_TKonCk.vb" />
+    <Compile Include="Col\Col_TKonCkCnt.vb" />
+    <Compile Include="Col\Col_TKonCkFdRcd.vb" />
+    <Compile Include="Col\Col_TKonFd.vb" />
+    <Compile Include="Col\Col_MSpDays.vb" />
+    <Compile Include="Col\Col_TKonMk.vb" />
+    <Compile Include="Col\Col_TKonMonth.vb" />
+    <Compile Include="Col\Col_TMKonInf.vb" />
+    <Compile Include="Col\Col_TMKonMk.vb" />
+    <Compile Include="Col\Col_TMPCnt.vb" />
+    <Compile Include="Col\Col_TMPFrmCnt.vb" />
+    <Compile Include="Col\Col_TPerAllEdit.vb" />
+    <Compile Include="Col\Col_TPerCmt.vb" />
+    <Compile Include="Col\Col_TPerDlv.vb" />
+    <Compile Include="Col\Col_TPerEat.vb" />
+    <Compile Include="Col\Col_TPerEatCmt.vb" />
+    <Compile Include="Col\Col_TPerEatIll.vb" />
+    <Compile Include="Col\Col_TPerEatLmt.vb" />
+    <Compile Include="Col\Col_TPerExam.vb" />
+    <Compile Include="Col\Col_TPerHai.vb" />
+    <Compile Include="Col\Col_TPerHaiCmt.vb" />
+    <Compile Include="Col\Col_TPerHospi.vb" />
+    <Compile Include="Col\Col_TPerIll.vb" />
+    <Compile Include="Col\Col_TPerInf.vb" />
+    <Compile Include="Col\Col_TPerIntk.vb" />
+    <Compile Include="Col\Col_TPerKCnt.vb" />
+    <Compile Include="Col\Col_TPerKCntSum.vb" />
+    <Compile Include="Col\Col_TPerLmt.vb" />
+    <Compile Include="Col\Col_TPerM.vb" />
+    <Compile Include="Col\Col_TPerMik.vb" />
+    <Compile Include="Col\Col_TPerMn.vb" />
+    <Compile Include="Col\Col_TPerMngDetl.vb" />
+    <Compile Include="Col\Col_TPerMov.vb" />
+    <Compile Include="Col\Col_TPerNut.vb" />
+    <Compile Include="Col\Col_TPerSel.vb" />
+    <Compile Include="Col\Col_TPerTec.vb" />
+    <Compile Include="Col\Col_TPerTecDetl.vb" />
+    <Compile Include="Col\Col_TPerVena.vb" />
+    <Compile Include="Col\Col_TZaiMony.vb" />
+    <Compile Include="Col\Col_TZaiOut.vb" />
+    <Compile Include="Col\Col_TZaiPla.vb" />
+    <Compile Include="Col\Col_VTKonFdNtCompD.vb" />
+    <Compile Include="Col\Col_XColDelvInfo.vb" />
+    <Compile Include="Col\Col_XItmLst.vb" />
+    <Compile Include="Col\Col_MCok.vb" />
+    <Compile Include="Col\Col_MFd.vb" />
+    <Compile Include="Col\Col_SFrm.vb" />
+    <Compile Include="Col\Col_SMenu.vb" />
+    <Compile Include="Col\Col_SMsg.vb" />
+    <Compile Include="Col\Col_MNamCls.vb" />
+    <Compile Include="Col\Col_MName.vb" />
+    <Compile Include="Col\Col_MParts.vb" />
+    <Compile Include="Col\Col_MStrd.vb" />
+    <Compile Include="Col\Col_SSys.vb" />
+    <Compile Include="Col\Col_MTrader.vb" />
+    <Compile Include="Col\Col_MUser.vb" />
+    <Compile Include="Col\Col_VCok.vb" />
+    <Compile Include="Col\Col_VFdParts.vb" />
+    <Compile Include="Col\Col_TPerLmtName.vb" />
+    <Compile Include="Col\Col_TZaiSim.vb" />
+    <Compile Include="Col\Col_TBuy.vb" />
+    <Compile Include="Col\Col_XKonKey.vb" />
+    <Compile Include="Col\Col_CSVData.vb" />
+    <Compile Include="Col\Col_MTraderMD.vb" />
+    <Compile Include="Col\Col_MFdChg.vb" />
+    <Compile Include="Col\Col_THacDlYMD.vb" />
+    <Compile Include="Rec\Rec_AConfig.vb" />
+    <Compile Include="Rec\Rec_AConfigDtl.vb" />
+    <Compile Include="Rec\Rec_MenuCountDiff.vb" />
+    <Compile Include="Rec\Rec_Dl_KHKS.vb" />
+    <Compile Include="Rec\Rec_FujitsuSockHd.vb" />
+    <Compile Include="Rec\Rec_LKon.vb" />
+    <Compile Include="Rec\Rec_LPer.vb" />
+    <Compile Include="Rec\Rec_MAge.vb" />
+    <Compile Include="Rec\Rec_MAgeDNR.vb" />
+    <Compile Include="Rec\Rec_MAgeInf.vb" />
+    <Compile Include="Rec\Rec_MCkSk.vb" />
+    <Compile Include="Rec\Rec_MColor.vb" />
+    <Compile Include="Rec\Rec_MColorSet.vb" />
+    <Compile Include="Rec\Rec_MContCls.vb" />
+    <Compile Include="Rec\Rec_MContClsLk.vb" />
+    <Compile Include="Rec\Rec_MFdSKey.vb" />
+    <Compile Include="Rec\Rec_MFdTray.vb" />
+    <Compile Include="Rec\Rec_MIRAIsSockHd.vb" />
+    <Compile Include="Rec\Rec_MMealCmtP.vb" />
+    <Compile Include="Rec\Rec_MMealLmtP.vb" />
+    <Compile Include="Rec\Rec_MNutSKey.vb" />
+    <Compile Include="Rec\Rec_MPc.vb" />
+    <Compile Include="Rec\Rec_MPrinter.vb" />
+    <Compile Include="Rec\Rec_MReserve.vb" />
+    <Compile Include="Rec\Rec_MSiTen.vb" />
+    <Compile Include="Rec\Rec_MUserGp.vb" />
+    <Compile Include="Rec\Rec_OChg.vb" />
+    <Compile Include="Rec\Rec_OChgAge.vb" />
+    <Compile Include="Rec\Rec_OMain.vb" />
+    <Compile Include="Rec\Rec_OMCdChg.vb" />
+    <Compile Include="Rec\Rec_OOdDivChg.vb" />
+    <Compile Include="Rec\Rec_OrderSTD.vb" />
+    <Compile Include="Rec\Rec_ORecv.vb" />
+    <Compile Include="Rec\Rec_OSendKon.vb" />
+    <Compile Include="Rec\Rec_OSeq.vb" />
+    <Compile Include="Rec\Rec_OTelDef.vb" />
+    <Compile Include="Rec\Rec_REiyoS.vb" />
+    <Compile Include="Rec\Rec_SDatabases.vb" />
+    <Compile Include="Rec\Rec_SiemensINI.vb" />
+    <Compile Include="Rec\Rec_SiemensOrderData.vb" />
+    <Compile Include="Rec\Rec_SMed.vb" />
+    <Compile Include="Rec\Rec_SMenuCountDiff.vb" />
+    <Compile Include="Rec\Rec_SPrtInf.vb" />
+    <Compile Include="Rec\Rec_TAgeTgt.vb" />
+    <Compile Include="Rec\Rec_MCmt.vb" />
+    <Compile Include="Rec\Rec_GTblCst.vb">
+    </Compile>
+    <Compile Include="Rec\Rec_MCmtChg.vb" />
+    <Compile Include="Rec\Rec_MCokFd.vb" />
+    <Compile Include="Rec\Rec_MealTpList.vb" />
+    <Compile Include="Rec\Rec_MFdCmt.vb" />
+    <Compile Include="Rec\Rec_MFdCnt.vb" />
+    <Compile Include="Rec\Rec_MFdComp.vb" />
+    <Compile Include="Rec\Rec_MFdCost.vb" />
+    <Compile Include="Rec\Rec_MFdNoUse.vb" />
+    <Compile Include="Rec\Rec_MFdNutri.vb" />
+    <Compile Include="Rec\Rec_MGpFd.vb" />
+    <Compile Include="Rec\Rec_MGpFdCls.vb" />
+    <Compile Include="Rec\Rec_MGpFdClsMx.vb" />
+    <Compile Include="Rec\Rec_MGpFdLk.vb" />
+    <Compile Include="Rec\Rec_MGpFdMx.vb" />
+    <Compile Include="Rec\Rec_MHeiSt.vb" />
+    <Compile Include="Rec\Rec_MJiGyo.vb" />
+    <Compile Include="Rec\Rec_MKMealLk.vb" />
+    <Compile Include="Rec\Rec_MKMealLmt.vb" />
+    <Compile Include="Rec\Rec_MKMealTp.vb" />
+    <Compile Include="Rec\Rec_MMealGpK.vb" />
+    <Compile Include="Rec\Rec_MMealGpP.vb" />
+    <Compile Include="Rec\Rec_MMealLmtK.vb" />
+    <Compile Include="Rec\Rec_MMealTpK.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_MMealTpP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_MNutri.vb" />
+    <Compile Include="Rec\Rec_MSisetsu.vb" />
+    <Compile Include="Rec\Rec_RHVirusC.vb" />
+    <Compile Include="Rec\Rec_RHVirusF.vb" />
+    <Compile Include="Rec\Rec_SCtl.vb" />
+    <Compile Include="Rec\Rec_SearchClsCd.vb" />
+    <Compile Include="Rec\Rec_SearchMCok.vb" />
+    <Compile Include="Rec\Rec_SearchMFd.vb" />
+    <Compile Include="Rec\Rec_SearchPer.vb" />
+    <Compile Include="Rec\Rec_SelectSet.vb" />
+    <Compile Include="Rec\Rec_SGrd.vb" />
+    <Compile Include="Rec\Rec_SJiGyoSnd.vb" />
+    <Compile Include="Rec\Rec_SROutPut.vb" />
+    <Compile Include="Rec\Rec_SRptInf.vb" />
+    <Compile Include="Rec\Rec_TBuyInf.vb" />
+    <Compile Include="Rec\Rec_TCKon.vb" />
+    <Compile Include="Rec\Rec_TCKonCk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_TCKonCnt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_TCKonFd.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_TContra.vb" />
+    <Compile Include="Rec\Rec_TContraFd.vb" />
+    <Compile Include="Rec\Rec_TCycle.vb" />
+    <Compile Include="Rec\Rec_TCycleFd.vb" />
+    <Compile Include="Rec\Rec_TFdCvt.vb" />
+    <Compile Include="Rec\Rec_TFdGpAvgJ.vb" />
+    <Compile Include="Rec\Rec_TFdGpAvgK.vb" />
+    <Compile Include="Rec\Rec_THacEdit.vb" />
+    <Compile Include="Rec\Rec_THacEditMeal.vb" />
+    <Compile Include="Rec\Rec_THacFd.vb" />
+    <Compile Include="Rec\Rec_THacHst.vb" />
+    <Compile Include="Rec\Rec_THacHstNo.vb" />
+    <Compile Include="Rec\Rec_THacInf.vb" />
+    <Compile Include="Rec\Rec_THacJZ.vb" />
+    <Compile Include="Rec\Rec_THacMealFd.vb" />
+    <Compile Include="Rec\Rec_THacValChg.vb" />
+    <Compile Include="Rec\Rec_TInvty.vb" />
+    <Compile Include="Rec\Rec_TKonCk.vb" />
+    <Compile Include="Rec\Rec_TKonCKCnt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_TKonCkFdRcd.vb" />
+    <Compile Include="Rec\Rec_TKonFd.vb" />
+    <Compile Include="Rec\Rec_MSpDays.vb" />
+    <Compile Include="Rec\Rec_TKonMk.vb" />
+    <Compile Include="Rec\Rec_TKonMonth.vb" />
+    <Compile Include="Rec\Rec_TMKonInf.vb" />
+    <Compile Include="Rec\Rec_TMKonMk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rec\Rec_TMPCnt.vb" />
+    <Compile Include="Rec\Rec_TMPFrmCnt.vb" />
+    <Compile Include="Rec\Rec_TPerAllEdit.vb" />
+    <Compile Include="Rec\Rec_TPerCmt.vb" />
+    <Compile Include="Rec\Rec_TPerDlv.vb" />
+    <Compile Include="Rec\Rec_TPerEat.vb" />
+    <Compile Include="Rec\Rec_TPerEatCmt.vb" />
+    <Compile Include="Rec\Rec_TPerEatIll.vb" />
+    <Compile Include="Rec\Rec_TPerEatLmt.vb" />
+    <Compile Include="Rec\Rec_TPerExam.vb" />
+    <Compile Include="Rec\Rec_TPerHai.vb" />
+    <Compile Include="Rec\Rec_TPerHaiCmt.vb" />
+    <Compile Include="Rec\Rec_TPerHospi.vb" />
+    <Compile Include="Rec\Rec_TPerIll.vb" />
+    <Compile Include="Rec\Rec_TPerInf.vb" />
+    <Compile Include="Rec\Rec_TPerIntk.vb" />
+    <Compile Include="Rec\Rec_TPerKCnt.vb" />
+    <Compile Include="Rec\Rec_TPerKCntSum.vb" />
+    <Compile Include="Rec\Rec_TPerLmt.vb" />
+    <Compile Include="Rec\Rec_TPerM.vb" />
+    <Compile Include="Rec\Rec_TPerMik.vb" />
+    <Compile Include="Rec\Rec_TPerMn.vb" />
+    <Compile Include="Rec\Rec_TPerMngDetl.vb" />
+    <Compile Include="Rec\Rec_TPerMov.vb" />
+    <Compile Include="Rec\Rec_TPerNut.vb" />
+    <Compile Include="Rec\Rec_TPerSel.vb" />
+    <Compile Include="Rec\Rec_TPerTec.vb" />
+    <Compile Include="Rec\Rec_TPerTecDetl.vb" />
+    <Compile Include="Rec\Rec_TPerVena.vb" />
+    <Compile Include="Rec\Rec_TZaiMony.vb" />
+    <Compile Include="Rec\Rec_TZaiOut.vb" />
+    <Compile Include="Rec\Rec_TZaiPla.vb" />
+    <Compile Include="Rec\Rec_USys.vb" />
+    <Compile Include="Rec\Rec_VTKonFdNtCompD.vb" />
+    <Compile Include="Rec\Rec_XChkInf.vb" />
+    <Compile Include="Rec\Rec_XColDelvInfo.vb" />
+    <Compile Include="Rec\Rec_XErr.vb" />
+    <Compile Include="Rec\Rec_XFileInfo.vb" />
+    <Compile Include="Rec\Rec_XKonKey.vb" />
+    <Compile Include="Rec\Rec_XPrm.vb" />
+    <Compile Include="Rec\Rec_XSys.vb" />
+    <Compile Include="Rec\Rec_XItmLst.vb" />
+    <Compile Include="Rec\Rec_MCok.vb" />
+    <Compile Include="Rec\Rec_MFd.vb" />
+    <Compile Include="Rec\Rec_SFrm.vb" />
+    <Compile Include="Rec\Rec_SMenu.vb" />
+    <Compile Include="Rec\Rec_SMsg.vb" />
+    <Compile Include="Rec\Rec_MNamCls.vb" />
+    <Compile Include="Rec\Rec_MName.vb" />
+    <Compile Include="Rec\Rec_MParts.vb" />
+    <Compile Include="Rec\Rec_SearchVCok.vb" />
+    <Compile Include="Rec\Rec_SearchVFdParts.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rec\Rec_MStrd.vb" />
+    <Compile Include="Col\Col_SSCK.vb" />
+    <Compile Include="Rec\Rec_SSCK.vb" />
+    <Compile Include="Rec\Rec_SSys.vb" />
+    <Compile Include="Rec\Rec_MTrader.vb" />
+    <Compile Include="Rec\Rec_MUser.vb" />
+    <Compile Include="Rec\Rec_VCok.vb" />
+    <Compile Include="Rec\Rec_VFdParts.vb" />
+    <Compile Include="Rec\Rec_TPerLmtName.vb" />
+    <Compile Include="Rec\Rec_TZaiSim.vb" />
+    <Compile Include="Rec\Rec_TBuy.vb" />
+    <Compile Include="Rec\Rec_CSVData.vb" />
+    <Compile Include="Rec\Rec_MTraderMD.vb" />
+    <Compile Include="Rec\Rec_MFdChg.vb" />
+    <Compile Include="Rec\Rec_THacDlYMD.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
