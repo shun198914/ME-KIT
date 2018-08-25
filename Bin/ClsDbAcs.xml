@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ClsDbAcs
+</name>
+</assembly>
+<members>
+<member name="T:ClsDbAcs.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:ClsDbAcs.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:ClsDbAcs.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:ClsDbAcs.CtlNutri.CheckNutriRpt(System.String,System.String,System.Int32)">
+ <summary>
+ 引数の日付以前（引数日付含む）のデータうち、最新帳票のファイル名取得
+ </summary>
+ <param name="StrPerCd">個人コード</param>
+ <param name="StrCtlYMD">作成日または実施日</param>
+ <param name="IntType">0：スクリーニング書、1:栄養管理計画書、2:栄養指導報告書</param>
+ <returns>過去帳票のファイル名</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
