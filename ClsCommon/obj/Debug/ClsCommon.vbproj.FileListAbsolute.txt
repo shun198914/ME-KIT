@@ -1,0 +1,11 @@
+D:\dev\Me-kit\Bin\ClsCommon.dll
+D:\dev\Me-kit\Bin\ClsCommon.pdb
+D:\dev\Me-kit\Bin\ClsCommon.xml
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.vbprojAssemblyReference.cache
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.Resources.resources
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.vbproj.GenerateResource.cache
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.vbproj.CoreCompileInputs.cache
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.vbproj.CopyComplete
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.dll
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.xml
+D:\dev\Me-kit\ClsCommon\obj\Debug\ClsCommon.pdb

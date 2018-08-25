@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ClsCommon
+</name>
+</assembly>
+<members>
+<member name="T:ClsCommon.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:ClsCommon.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:ClsCommon.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmExamDiv.All">
+ <summary>全て</summary>
+ <remarks></remarks>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmExamDiv.Tec">
+ <summary>栄養指導</summary>
+ <remarks></remarks>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmExamDiv.Mng">
+ <summary>栄養管理</summary>
+ <remarks></remarks>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmExamDiv.Care">
+ <summary>栄養ケア</summary>
+ <remarks></remarks>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmNtrExamEditor.Dec">
+ <summary>数値入力</summary>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmNtrExamEditor.Txt">
+ <summary>テキスト入力</summary>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmNtrExamEditor.Cmb">
+ <summary>コンボリスト入力</summary>
+</member>
+<member name="F:ClsCommon.ClsCst.PerExam.enmNtrExamEditor.Ymd">
+ <summary>日付入力</summary>
+</member>
+<member name="F:ClsCommon.ClsCst.THacInf.CST_FACDIV_GENTHI_START_CHAR">
+ <summary>
+ 工場区分-現地判定文字列(DisCd=4010,Cd1がZZで始まるものは現地とする)
+ </summary>
+ <remarks>工場区分-現地判定文字列</remarks>
+</member>
+</members>
+</doc>
